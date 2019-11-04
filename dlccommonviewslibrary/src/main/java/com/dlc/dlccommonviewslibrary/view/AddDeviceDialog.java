@@ -54,7 +54,7 @@ public class AddDeviceDialog extends Dialog implements View.OnClickListener {
             @SuppressLint("MissingPermission") String imei = telephonyManager.getDeviceId();
             this.imei = imei;
             if (imei != null) {
-                tvImei.setText(imei);
+                tvImei.setText("IMEI：" + imei);
             } else {
                 if (!isGetImei) {
                     return;
